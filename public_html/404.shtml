@@ -1,0 +1,7 @@
+<html><head><title>404 Page Not Found</title></head>
+<body bgcolor=white>
+<h1>404 Page Not Found</h1>
+
+The Page is not found <!--#echo var="REQUEST_URI" -->
+
+</body></html>

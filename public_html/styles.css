@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300italic");
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic);
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+}
+h4{
+
+  font-family: "Merriweather", sans-serif;
+}
+
+.pic-bg {
+  position: fixed;
+  background: url(https://images.unsplash.com/photo-1471045220822-f3f0ad3a5416?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1004&q=80) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-color: #58aff6;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+.white-bg {
+  position: absolute;
+  top: 0;
+  background-color: #fafafa;
+  min-height: 500px;
+  margin: 210px 15px;
+  width: 90vw;
+  height: 100vh;
+  -webkit-transform: skewY(5deg);
+          transform: skewY(5deg);
+  z-index: -1;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  margin: 250px 11vw;
+  max-width: 65vw;
+  background-color: #fafafa; 
+}
+
+.shadow {
+  box-shadow: -2px -5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+ 
+
+#sidebar{
+  background:#151718;
+  width:131px;
+  height:0px;
+  display:block;
+  position:fixed;
+  left:-70px;
+  top:0px;
+  z-index:99;
+  transition:left 0.05s linear;
+}
+
+#sidebar.visible{
+  left:0px;
+  transition:left 0.07s linear;
+}
+
+ul{
+  margin:0px;
+  padding:0px;
+}
+
+ul li{
+  list-style:none;
+}
+
+ul li a{
+  color:#23;
+  display:block;
+  width:50px;
+  margin:5px;
+  padding:12px;
+  text-decoration: none;
+}
+
+#sidebar-btn{
+  display:inline-block;
+  vertical-align: middle;
+  width:20px;
+  height:10px;
+  cursor:pointer;
+  margin:20px;
+  position:absolute;
+  top:0px;
+  right:2px;
+}
+
+#sidebar-btn span{
+  height:1px;
+  background:#111;
+  margin-bottom:5px;
+  display:block;
+}
+
+#sidebar-btn span:nth-child(2){
+  width:75%;
+}
+
+#sidebar-btn span:nth-child(3){
+  width:50%;
+}

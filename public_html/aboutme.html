@@ -1,0 +1,79 @@
+ 
+<!DOCTYPE html>
+
+<!-- Attributes -->
+<html lang = "en-US">
+  <head>
+    <title> Projects </title>
+    <!--Import Google Icon Font--> 
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+    <link  rel="stylesheet" href="styles.css" />
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="thumbnails/tn_rk.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>  
+
+
+    <!-- SIDEBAR-->
+    <div id="sidebar">
+      <ul>
+        <li><a href="default.html">Projects</a></li>
+        <li><a href="https://github.com/keatir" target="_blank">GitHub</a></li> 
+        <li><a href="aboutMe.html">Me</a></li> 
+      </ul>
+
+      <div id="sidebar-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+
+<main id="top">
+  <div class="pic-bg"></div>
+  <div class="white-bg shadow" id="polygon"></div>
+  <div class="content" id="writtenContent"> 
+
+    <h1>Whats up</h1>
+     
+
+      <div id="helloworld">
+        <p> Hi, my name is Reilly! I am a CS major and EArts minor at RPI.
+         I was a diver on the <br> swim and dive team, and Sigma Chi.
+         Now I'm working to get a job on the  pipeline<br> because coding and 
+         film production, are both pretty much my favorite things, 
+        <br> after WestWorld, GOT, Inception, 100 Year Old Man, Gravity Falls, and Big Hero Six
+        <br> ...and croissants :) </p>
+     </div>
+      <div class="col s4">
+          <br>  
+          <a class="btn" href="files/Resume.pdf" target="_blank">Resume</a>
+      </div>
+
+   <script> 
+
+      $(document).ready(function(){ 
+          var poly=$(".white-bg").height();
+          var inside=$(".content").height();
+          // alert("poly: "+poly +" and inside: "+inside);
+          if(inside>poly)
+          {
+              $(".white-bg").height(inside+130);
+          } 
+ 
+
+         $('#sidebar-btn').click(function(){
+          $('#sidebar').toggleClass('visible');
+        });
+      });
+    </script>
+  </body> 
+</html> 

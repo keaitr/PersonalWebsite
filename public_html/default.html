@@ -1,0 +1,158 @@
+ 
+<!DOCTYPE html>
+
+<!-- Attributes -->
+<html lang = "en-US">
+  <head>
+    <title> Projects </title>
+    <!--Import Google Icon Font-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+    <link  rel="stylesheet" href="styles.css" />
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="thumbnails/tn_rk.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>  
+
+
+    <!-- SIDEBAR-->
+    <div id="sidebar">
+      <ul>
+        <li><a href="default.html">Projects</a></li>
+        <li><a href="https://github.com/keatir" target="_blank">GitHub</a></li> 
+        <li><a href="aboutMe.html">Me</a></li> 
+      </ul>
+
+      <div id="sidebar-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+
+<main id="top">
+  <div class="pic-bg"></div>
+  <div class="white-bg shadow" id="polygon"></div>
+  <div class="content" id="writtenContent"> 
+
+    <h1>Projects</h1>
+    <!-- POST BELOW HERE!!!!!!!!!!!!!!!!-->
+
+
+
+      <div id="helloworld">
+          <h4> Apr 20 2018 </h4>
+          <hr>
+
+          <!-- CAROUSEL START-->
+          <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel1" data-slide-to="1"></li>
+              <li data-target="#myCarousel1" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="https://unsplash.it/800/600/?random&v=1" style="width:100%;">
+              </div>
+
+              <div class="item">
+                <img src="https://unsplash.it/800/600/?random&v=2" style="width:100%;">
+              </div>
+            
+              <div class="item">
+                <img src="https://unsplash.it/800/600/?random&v=3" style="width:100%;">
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <br>
+          <!-- CAROUSEL END-->
+
+
+
+          <p> Decided to go ahead with the basic bootstrap carousel. Maybe I will make new chevrons 
+          someday. Anyways I have the basics post guideline. I will throw together a script later for creating a post. Each carousel needs to be unique, so for the '#id' I make it based on the date. In the future I will load formated photos to the site. Also not sure if posts should have a title. I'll just go with date for now.
+          </p><p>Whenever I write code I'll try to put it on GitHub, and that will always be the link below my post.</p>
+          <a href="https://github.com/keaitr/PersonalWebsite" target="_blank">GitHub </a> 
+
+        <p><br><br></p>
+
+      </div>
+
+
+      <div id="helloworld">
+          <h4> Apr 19 2018 </h4>
+          <hr>
+          <p> Got a cool design, sidebar, and image from 
+            <a href="https://unsplash.com/" target="_blank"> unsplash </a> 
+            (tyty). Think for projects, I will add the code to 
+          Github (including this one)... Honestly github isn't to intuitive, so it will be a hot take.
+           Next is to work on a way to add photos. Thinking maybe a carousel.. hmm </p>
+        <p><br><br></p>
+      </div>
+
+
+      <div id="helloworld">
+          <h4> Apr 18 2018 </h4>
+          <p> Hello World!</p> 
+          <p>Working on my website again. Woo! My plan is to establish a work in progress 'blog'
+          as I work on projects and interests. This blog is to showcase what I learn for my ultimate 
+          goal to working on the Pipeline (preferably as TD) for film production. I think working 
+          between artists and coders is wicked awesome. I like both so much and the existence of 
+          that field is flipping awesome.
+          <br> 
+          My first step is to work on my website. I want it to show off what I have learned yeee!
+          Right now gonna make the page look better over time... I would like an easy interface. 
+          Smooth loading and scrolling. Easy picture viewing (of what i do). Script for making a 
+          post. Someday might need to make multiple pages for loading. I don't 
+          know html, css, or jquery at all, soooo this will be an undertaking. 😓
+
+          <br>
+          Anyways... working to make my dream come true. #dreamCareer lol
+          </p>
+          <p><br><br></p>
+        </div>
+
+
+
+
+   <script> 
+
+      $(document).ready(function(){ 
+          var poly=$(".white-bg").height();
+          var inside=$(".content").height();
+          // alert("poly: "+poly +" and inside: "+inside);
+          if(inside>poly)
+          {
+              $(".white-bg").height(inside+130);
+          } 
+ 
+
+         $('#sidebar-btn').click(function(){
+          $('#sidebar').toggleClass('visible');
+        });
+      });
+    </script>
+  </body> 
+</html> 
