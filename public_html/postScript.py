@@ -111,7 +111,7 @@ if __name__ == "__main__":
 	#Will add image names to html
 	images = image_list()
 	#create git hub link (or no)
-	ghl = raw_input("Enter 'no', or fill in https://github.com/keaitr/").strip()
+	ghl = raw_input("Enter 'no', or provide github html").strip()
 	gitHubLink = ghl
 
 	#write posts description
